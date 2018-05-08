@@ -11,5 +11,5 @@ spec:
       paths:
       - path: /loyalty-level/.*
         backend:
-          serviceName: {{ .Release.Name }}-{{ .Chart.Name }}
+          serviceName: loyalty-level-service
           servicePort: {{ .Values.service.servicePort.https }}
